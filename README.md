@@ -19,3 +19,7 @@ Install the dependencies:
 
 Run the app:  
   * ```$ npm run dev```
+
+  ## Resources
+
+  [Grid CSS Die Faces](https://dev.to/ekeijl/creating-dice-using-css-grid-j4)
