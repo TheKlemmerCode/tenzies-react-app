@@ -5,6 +5,9 @@ function App() {
   
   return (
       <main>
+        <div className='slate'>
+
+        </div>
       </main>
   )
 }
