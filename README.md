@@ -22,4 +22,6 @@ Run the app:
 
   ## Resources
 
-  [Grid CSS Die Faces](https://dev.to/ekeijl/creating-dice-using-css-grid-j4)
+  [Grid CSS Die Faces](https://dev.to/ekeijl/creating-dice-using-css-grid-j4)  
+  [Darken Color Tool](https://mdigi.tools/darken-color/)  
+  [Lighten Color Tool](https://mdigi.tools/lighten-color/)  

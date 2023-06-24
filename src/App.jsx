@@ -1,30 +1,52 @@
 import { useEffect, useState } from 'react'
 import {nanoid} from "nanoid"
 
-import Die from './assets/components/Die'
-
 import './assets/css/App.css'
+
+import Die from './assets/components/Die'
 
 function App() {
   const [dice, setDice] = useState(allNewDice())
     
   function allNewDice() {
-      const newDice = []
-      for (let i = 0; i < 10; i++) {
-          newDice.push({
-            value: Math.ceil(Math.random() * 6),
-            isHeld: false,
-            id: nanoid()
-          })
-      }
-      return newDice
+    const newDice = []
+    for (let i = 0; i < 10; i++) {
+        newDice.push(newDie())
+      }  
+    return newDice
+  }
+  
+
+  function newDie() {
+    return {
+      value: Math.ceil(Math.random() * 6),
+      isHeld: false,
+      id: nanoid()
+    }
   }
 
   function rollDice() {
-    setDice(allNewDice)
+    setDice(oldDice => oldDice.map(die => {
+      return die.isHeld ? die : newDie()
+    }))
   }
 
-  const diceElements = dice.map(die => <Die key={die.id} value={die.value} />)
+  function holdDie(id) {
+    setDice(oldDice => oldDice.map(die => {
+      return die.id === id ? {...die, isHeld: !die.isHeld} : die
+    }))
+  }
+
+  const diceElements = dice.map(die => {
+    return (
+      <Die 
+        holdDie={() => holdDie(die.id)}
+        isHeld={die.isHeld}
+        key={die.id} 
+        value={die.value} 
+      />
+    )
+  })
   
   return (
       <main>
