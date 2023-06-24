@@ -7,7 +7,12 @@ import Die from './assets/components/Die'
 
 function App() {
   const [dice, setDice] = useState(allNewDice())
-    
+  const [tenzies, setTenzies] = useState(false)
+
+  useEffect(() => {
+    console.log("Dice Changed")
+  }, [dice])
+  
   function allNewDice() {
     const newDice = []
     for (let i = 0; i < 10; i++) {
@@ -50,6 +55,8 @@ function App() {
   return (
       <main>
         <div className='container'>
+          <h1 className="title">Tenzies</h1>
+          <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
           <div className='dice-container'>
             {diceElements}
           </div>
