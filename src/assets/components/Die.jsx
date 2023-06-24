@@ -1,9 +1,8 @@
 import '../css/Die.css'
 
-function Die({ value }) {
+function Die({ holdDie, isHeld, value }) {
     return (
-        <div className='die-face'>
-            {/*<h2 className="die-number">{value}</h2>*/}
+        <div onClick={holdDie} className={`die-face ${isHeld ? 'die-selected' : 'die-unselected'}`}>
             {Array.from(Array(value), (_, i) => <span key={i} className="pip"> </span>)}
         </div>
     )
