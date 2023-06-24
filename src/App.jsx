@@ -16,7 +16,6 @@ function App() {
     return newDice
   }
   
-
   function newDie() {
     return {
       value: Math.ceil(Math.random() * 6),
