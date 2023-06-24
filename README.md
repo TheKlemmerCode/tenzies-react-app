@@ -18,10 +18,20 @@ Install the dependencies:
   * ```$ npm install```
 
 Run the app:  
-  * ```$ npm run dev```
+  * ```$ npm run dev```  
 
-  ## Resources
+## Future Features  
 
-  [Grid CSS Die Faces](https://dev.to/ekeijl/creating-dice-using-css-grid-j4)  
-  [Darken Color Tool](https://mdigi.tools/darken-color/)  
-  [Lighten Color Tool](https://mdigi.tools/lighten-color/)  
+* Track Number Of Rolls  
+* Track Start Time  
+* Track / Display End Time  
+* Track / Display Total Time
+* Store Best Time  
+* Improve Responsive Design  
+* Multiplayer ???
+
+## Resources
+
+[Grid CSS Die Faces](https://dev.to/ekeijl/creating-dice-using-css-grid-j4)  
+[Darken Color Tool](https://mdigi.tools/darken-color/)  
+[Lighten Color Tool](https://mdigi.tools/lighten-color/)  
