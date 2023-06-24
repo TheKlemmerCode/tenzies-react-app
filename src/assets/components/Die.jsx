@@ -9,4 +9,3 @@ function Die({ holdDie, isHeld, value }) {
   }
   
   export default Die
-  
