@@ -13,9 +13,6 @@ function App() {
   useEffect(() => {
     const allEqual = dice.every(die => die.value === dice[0].value && die.isHeld)
     setTenzies(allEqual)
-    if (allEqual) {
-      console.log("You win!");
-    }
   }, [dice])
   
   function allNewDice() {
