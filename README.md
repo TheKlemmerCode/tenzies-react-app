@@ -1,6 +1,6 @@
-# React Notes Application
+# React Tenzies Application
 
-Scrimba React Course - Notes App
+Scrimba React Course - Tenzies App
 
 ## Description
 
